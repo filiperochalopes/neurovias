@@ -1,0 +1,209 @@
+/* --------- START DO NOT CHANGE ----------- */ 
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@mixin paddingmargin0{
+    padding: 0;
+    margin: 0;
+}
+
+@mixin center{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centerx{
+    left:50%;
+    transform: translateX(-50%);
+}
+
+$cinzaescuro: #313131;
+$verde: #4bd57d;
+$vermelho: #d5455f;
+
+*:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    tap-highlight-color: rgba(0,0,0,0);
+}
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: $cinzaescuro;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#logo_back{
+    position: absolute;
+    top: 10px;
+    @include centerx;
+    background: url(../img/simbolobranco.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 65px;
+    opacity: .5;
+    z-index: 2;
+    
+    &:hover{
+        opacity: 1;
+    }
+}
+
+#menu-bt{
+    height: 30px;
+    width: 30px;
+    font-size: 1.2em;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    color: rgba(247, 247, 247, 0.1);
+    transform: translate(-90px, 25px);
+    z-index: 2;
+    border-radius: 50%;
+    
+    &:active{
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+#score{
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    font-size: 1.7em;
+    color: rgba(247, 247, 247, 0.1);
+    opacity: .8;
+    
+    .certo{
+        color: $verde;
+        margin-right: 2px;
+    }
+    
+    .errado {
+        color: $vermelho;  
+        margin-left: 2px;
+    }
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    max-height: 90vh;
+    background: $cinzaescuro;
+    top: 90px;
+    display: none;
+    z-index: 2;
+    color: #fff;
+    font-size: .9em;
+    text-align: center;
+    overflow-y: auto;
+    
+    ul{
+        list-style: none;
+        @include paddingmargin0;
+        
+        li{
+                max-width: 100%;
+                min-width: 200px;
+                padding: 12px 10px;
+                cursor: pointer;
+                border-radius: 20px;
+                margin-bottom: 5px;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+#main_canvas_container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#backdrop{
+    position: absolute;
+    z-index: 3;
+    top:0;
+    left:0;
+    background: rgba(47, 47, 47, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #5c9a7d;
+    min-width: 320px;
+    max-width: 80%;
+    min-height: 300px;
+    max-height: 80%;
+    padding: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    
+    .close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.3em;
+    }
+}
+
+.mark{
+    background: #d6d386;
+}
+
+.markred{
+    background: #c36363;
+}
+
+.markblue{
+    background: #5aa1a3;
+}
+
+.none{
+    display: none;
+}
+
+/* --------- END DO NOT CHANGE ----------- */
+
+
+/* --------- BOTÕES DE DENTRO ----------- */
+
+@import '_botaoflutuante.scss';
+
+.bt.inside{
+    
+    &.bottomright{
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    &.bottomcenter{
+        bottom:20px;
+        @include centerx;
+    }
+}

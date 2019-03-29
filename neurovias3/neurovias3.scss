@@ -1,0 +1,317 @@
+/* --------- START DO NOT CHANGE ----------- */ 
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@mixin paddingmargin0{
+    padding: 0;
+    margin: 0;
+}
+
+@mixin center{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centerx{
+    left:50%;
+    transform: translateX(-50%);
+}
+
+$cinzaescuro: #313131;
+$verde: #4bd57d;
+$vermelho: #d5455f;
+  
+
+*:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    tap-highlight-color: rgba(0,0,0,0);
+}
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: $cinzaescuro;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#menu-bt{
+    height: 30px;
+    width: 30px;
+    font-size: 1.2em;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    color: rgba(247, 247, 247, 0.1);
+    transform: translate(-90px, 25px);
+    z-index: 2;
+    border-radius: 50%;
+    
+    &:active{
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    max-height: 90vh;
+    background: $cinzaescuro;
+    top: 90px;
+    display: none;
+    z-index: 2;
+    color: #fff;
+    font-size: .9em;
+    text-align: left;
+    overflow-y: auto;
+    
+    ul{
+        list-style: none;
+        @include paddingmargin0;
+        
+        li.titulo{
+            margin-top: 10px;
+            font-weight: bold;
+        
+            &:hover{
+                text-decoration: none;
+            }
+        }   
+
+        li{
+            max-width: 100%;
+            min-width: 200px;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 20px;
+            margin-bottom: 5px;
+
+            &.off{
+                opacity: .35;
+
+                &:hover{
+                    color: #fff;
+                }
+            }
+
+            &:hover{
+                color: #000;
+            }
+
+            > div{
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                margin-right: 10px;
+                border-radius: 50%;
+            }
+
+            > span{
+                vertical-align: middle;
+                height: 30px;
+                display: inline-block;
+            }
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#score{
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    font-size: 1.7em;
+    color: rgba(247, 247, 247, 0.1);
+    opacity: .8;
+    
+    .certo{
+        color: $verde;
+        margin-right: 2px;
+    }
+    
+    .errado {
+        color: $vermelho;  
+        margin-left: 2px;
+    }
+}
+
+
+#main_canvas_container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#backdrop{
+    position: absolute;
+    z-index: 3;
+    top:0;
+    left:0;
+    background: rgba(47, 47, 47, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+#BoxDefinicao{
+    position: absolute;
+    @include center;
+    background: #fff;
+    width: 80%;
+    z-index: 99;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px #000;
+    
+    td{
+        width: 100%;
+        padding: 10px;
+    }
+    
+    tr:nth-child(2n){
+        background: #ccc;
+    }
+    
+    .resultadoQuiz {
+        display: block;
+        padding: 20px;
+    }
+}
+
+#quizBox{
+    position: absolute;
+    @include center;
+    z-index: 99;
+    width: 80%;
+    
+    & > div{
+        height: 45px;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 1px 2px #000;
+        text-align: center;
+        line-height: 45px;
+        margin: 10px 0;
+        color: #3a3a3a;
+        background: #f9f9f9;
+    }
+}
+
+#logo_back{
+    position: absolute;
+    top: 10px;
+    @include centerx;
+    background: url(../img/simbolobranco.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 65px;
+    opacity: .5;
+    z-index: 2;
+    
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.info{
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #5c9a7d;
+    min-width: 320px;
+    max-width: 80%;
+    min-height: 300px;
+    max-height: 80%;
+    padding: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    
+    .close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.3em;
+    }
+}
+
+.mark{
+    background: #d6d386;
+}
+
+.markred{
+    background: #c36363;
+}
+
+.markblue{
+    background: #5aa1a3;
+}
+
+.none{
+    display: none;
+}
+
+/* --------- BOTÕES DE DENTRO ----------- */
+
+@import '_botaoflutuante.scss';
+
+.bt.inside{
+    
+    &.bottomright{
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    &.bottomcenter{
+        bottom:20px;
+        @include centerx;
+    }
+}
+
+/* --------- PAINEL ESQUERDA ----------- */
+
+#painel_left{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: none;
+}
+
+.twoclicks{
+    
+    .bt{
+        min-width: 40px;
+        display: inline-block;
+        width: auto;
+        height: auto; 
+    }
+    
+    .secondclick {
+        display: none;
+    }
+}
+
+.leftmenu_sub{
+    ul{
+        display: none;
+        color: #fff;
+    }
+}

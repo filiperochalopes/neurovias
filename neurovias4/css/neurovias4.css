@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+*:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+  color: #cacaca;
+}
+
+body {
+  background-color: #313131;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#menu-bt {
+  height: 30px;
+  width: 30px;
+  font-size: 1.2em;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  color: rgba(247, 247, 247, 0.1);
+  -webkit-transform: translate(-90px, 25px);
+          transform: translate(-90px, 25px);
+  z-index: 2;
+  border-radius: 50%;
+}
+
+#menu-bt:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+header {
+  font-family: 'Signika', sans-serif;
+}
+
+#logo_back {
+  position: relative;
+  opacity: .5;
+  z-index: 2;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#logo_back:hover {
+  opacity: 1;
+}
+
+#score {
+  position: fixed;
+  left: 20px;
+  bottom: 50px;
+  font-size: 1.7em;
+  color: rgba(247, 247, 247, 0.1);
+  opacity: .8;
+}
+
+#score .certo {
+  color: #4bd57d;
+  margin-right: 2px;
+}
+
+#score .errado {
+  color: #d5455f;
+  margin-left: 2px;
+}
+
+#backdrop {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: rgba(47, 47, 47, 0.9);
+  width: 100%;
+  height: 100%;
+}
+
+/* --------- QUESTOES ----------- */
+#alternativas {
+  list-style: lower-latin;
+}
+
+#alternativas li {
+  cursor: pointer;
+  padding: 10px 5px;
+}
+
+#alternativas li.selected {
+  color: #1b1b1b;
+  font-weight: bold;
+}
+
+#resposta {
+  display: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #313131;
+  margin-bottom: 20px;
+}
+
+#resposta.red {
+  background: #d5455f;
+}
+
+#resposta.green {
+  background: #4bd57d;
+}
+
+#fim {
+  display: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+#fim.red {
+  border: 2px solid #d5455f;
+}
+
+#fim.green {
+  border: 2px solid #4bd57d;
+}
+
+#explicacao {
+  display: none;
+  border: 2px solid #4bd57d;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+#fontes {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #474747;
+  background: #242424;
+  padding: 12px;
+  font-size: .8em;
+  width: 100%;
+}
+
+button.inside {
+  float: right;
+  display: block;
+  background: #d5cfc2;
+  color: #313131;
+  border: 1px solid #cbc5ba;
+  height: 30px;
+  font-size: .8em;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 40px;
+  z-index: 5;
+  text-align: center;
+  padding: 0px 15px;
+  font-family: 'Signika', sans-serif;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.alignright {
+  position: relative;
+  text-align: right;
+}
+
+#proximo {
+  display: none;
+}
+/*# sourceMappingURL=neurovias4.css.map */

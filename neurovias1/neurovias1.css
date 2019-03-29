@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/* --------- START DO NOT CHANGE ----------- */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Lato|Signika:600");
+*:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #313131;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#logo_back {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url(../img/simbolobranco.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 65px;
+  opacity: .5;
+  z-index: 2;
+}
+
+#logo_back:hover {
+  opacity: 1;
+}
+
+#menu-bt {
+  height: 30px;
+  width: 30px;
+  font-size: 1.2em;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  color: rgba(247, 247, 247, 0.1);
+  -webkit-transform: translate(-90px, 25px);
+          transform: translate(-90px, 25px);
+  z-index: 2;
+  border-radius: 50%;
+}
+
+#menu-bt:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#score {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  font-size: 1.7em;
+  color: rgba(247, 247, 247, 0.1);
+  opacity: .8;
+}
+
+#score .certo {
+  color: #4bd57d;
+  margin-right: 2px;
+}
+
+#score .errado {
+  color: #d5455f;
+  margin-left: 2px;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  max-height: 90vh;
+  background: #313131;
+  top: 90px;
+  display: none;
+  z-index: 2;
+  color: #fff;
+  font-size: .9em;
+  text-align: center;
+  overflow-y: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  max-width: 100%;
+  min-width: 200px;
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+#main_canvas_container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#backdrop {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: rgba(47, 47, 47, 0.9);
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #5c9a7d;
+  min-width: 320px;
+  max-width: 80%;
+  min-height: 300px;
+  max-height: 80%;
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.info .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.3em;
+}
+
+.mark {
+  background: #d6d386;
+}
+
+.markred {
+  background: #c36363;
+}
+
+.markblue {
+  background: #5aa1a3;
+}
+
+.none {
+  display: none;
+}
+
+/* --------- END DO NOT CHANGE ----------- */
+/* --------- BOTÕES DE DENTRO ----------- */
+/* --------- BOTÕES FLUTUANTES ----------- */
+.botaobalao {
+  z-index: 2;
+}
+
+.botaobalao.flutuante {
+  position: fixed;
+}
+
+.botaobalao.bottomright {
+  bottom: 20px;
+  right: 20px;
+}
+
+.botaobalao.bottomleft {
+  bottom: 20px;
+  left: 20px;
+}
+
+.botaobalao.topright {
+  top: 20px;
+  right: 20px;
+}
+
+.botaobalao.bottomcenter {
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.botaobalao .balaomensagem {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.29, 0.03, 0.35, 1.31);
+          transition-timing-function: cubic-bezier(0.29, 0.03, 0.35, 1.31);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid transparent;
+  z-index: -1;
+  overflow-y: auto;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+
+.botaobalao .balaomensagem > div {
+  display: none;
+}
+
+.botaobalao .bt {
+  cursor: pointer;
+  height: 30px;
+  font-size: .8em;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 40px;
+  z-index: 5;
+  text-align: center;
+  padding: 0px 15px;
+  font-family: 'Signika', sans-serif;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.botaobalao .bt.branco {
+  color: #a5a5a5;
+  border: 1px solid #ccc;
+}
+
+.botaobalao .bt.roxo {
+  background: #6d2b9d;
+  color: #fff;
+  border: 1px solid #5e2387;
+}
+
+.botaobalao .bt.claro {
+  background: #d5cfc2;
+  color: #313131;
+  border: 1px solid #cbc5ba;
+}
+
+.bt.inside.bottomright {
+  bottom: 20px;
+  right: 20px;
+}
+
+.bt.inside.bottomcenter {
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=neurovias1.css.map */

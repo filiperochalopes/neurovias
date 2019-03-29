@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "questao": "Paciente masculino, 48 anos, natural e procedente do Vale de Jequiriçá - Bahia, queixa-se de perda de acuidade visual no olho esquerdo, tontura acompanhado com dificuldade de deambular (ataxia), disúria e impotência sexual. VLDR e FTA-Abs positivos no sangue e no líquor com história pregressa de múltiplas parceiras e sexo desprotegido há cerca de 25 anos, quando frequentava o Carnaval de Salvador.\n Ao exame físico apresenta arreflexia em olho esquerdo, comprometimento da sensibilidade proprioceptiva e pupilas de Argyll Robertson, a parte das vias medulares acometidas é:",
+    "alternativas": [
+      [0, "trato espinotalâmico lateral"],
+      [1, "trato corticoespinhal lateral"],
+      [2, "funículo lateral em ambos os lados da medula"],
+      [3, "funículo posterior ( fascículos grácil e cuneiforme )"],
+      [4, "trato corticoespinhal anterior"]
+    ],
+    "correta": 3,
+    "explicacao": "Uma das complicações da sífilis é a neurossífilis ou sífilis terciária, que está associado à tabes dorsalis com comprometimento do funículo posterior da medula e assim, comprometimento do propriocepção do paciente, gerando ataxia por falta de reconhecimento dos membros no espaço, gerando descoordenação de movimentos, em situações mais graves a neurossífilis evolui para paralisia geral com óbito. \n \n SINAL DE ARGYLL ROBERTSON \n    Quatro são os elementos clínicos que compõem o sinal de Argyll: 1) Integridade das vias óticas; 2) Miose; 3) Dissociação das reações pupilares, estando abolido o reflexo foto-motor e presente a contração pupilar à convergência; 4 Bi-lateralidade do fenômeno. Fonte: 1. Silva J. O reflexo foto-motor em patologia nervosa. Arquivos de Neuro-Psiquiatria. 1943;1(3):271-284.",
+    "assets": [
+      ["img", "tabesdorsalis.jpg" , "tabes dorsalis, mielina normal está em preto ou azul", "http://www.uaz.edu.mx/histo/pathology/ed/ch_28/c28_s32.htm" ],
+      ["img", "argyll.jpg" , "pupilas de Argyll Robertson, na incidência de luz a pupíla não faz miose, enquanto na convergência faz", "http://medicalstuff4students.blogspot.com/2010/08/argyll-robertson-pupil.html" ]
+    ],
+    "fontes" : [
+      "http://www.rmmg.org/exportar-pdf/494/v19n1a14.pdf"
+    ]
+  },
+
+  {
+    "id": 2,
+    "questao": "Paciente masculino, 40 anos sem história de patologia prévia da coluna cervical; teve início insidioso de paresia nos membros direitos, associada à diminuição da sensibilidade dolorosa e térmica do hemicorpo esquerdo, após mergulho que ocasionou trauma indireto da coluna cervical. A RM da coluna cervical mostrou hérnias discais paramedianas direitas nos níveis C4-C5 e C5-C6 com compressão da metade direita do cordão medular e hiperintensidade em T2. Foi realizada descompressão por via anterior e artrodese dos níveis afetados. O paciente recuperou-se parcialmente dos déficits neurológicos, após um longo programa de reabilitação funcional. A alternativa que correlaciona o trato acometido e seu sinal é:",
+    "alternativas": [
+      [0, "trato corticoespinhal lateral direito - dor do lado esquerdo"],
+      [1, "trato espinotalâmico lateral direito - dor do lado direito"],
+      [2, "trato corticoespinhal lateral direito - déficit motor direito"],
+      [3, "fascículo grácil e cuneiforme lateral direito - déficit motor direito"],
+      [4, "trato espinotalâmico lateral direito - perda da sensibilidade térmica direita"]
+    ],
+    "correta": 2,
+    "explicacao": "A compressão da medula na metade direita da medula pela  hérnia causada pelo impacto no acidente é responsável por uma síndrome chamada de Brown-Séquard que acomete as funções das vias que passam por esse espaço.",
+    "assets": [],
+    "fontes" : [
+      "2. Alves J, Peixoto P, Ferreira N, Martins R, Correia J, Silva F et al. Síndrome de Brown-Séquard por hérnia discal cervical a duplo nível: caso clínico e revisão da literatura. Coluna/Columna. 2012;11(3):245-246."
+    ]
+  },
+
+  {
+    "id": 2,
+    "questao": "Paciente masculino, 60 anos, industrial aposentado, com queixas de dor cervical que lhe ocorreu pela primeira vez por volta dos 20 anos enquanto trabalhava, seu trabalho consistia, uma boa parte em transportar cargas sobre a cabeça descarregando caminhões, porém afirma que existia fases longas de melhoria do quadro (estado assintomático). Numa história mais recente diz que há piora progressiva do quadro, com intervalos cada vez menores de fases assintomáticas. Na tomografia apresenta osteófitos vertebrais em lombar e cervical, com protrusão discal, diâmetro do canal cervical 12.5cm. Hoje conta que necessita andar de bengala ou com auxílio de terceiros em solo plano e perda de movimentos finos como abotoar a camisa, com parestesia de MMII e MMSS acompanhado de dor em região cervical. O acometimento desse paciente é, possivelmente:",
+
+    "alternativas": [
+      [0, "no trato espinotalâmico posterior"],
+      [1, "no trato espinotalâmico anterior também, mas exclusivamente o esquerdo"],
+      [2, "acometimento generalizado, talvez por algum tipo de degeneração acompanhada"],
+      [3, "o trato corticoespinhal lateral, exclusivamente, pois são ou membros que estão debilitados"],
+      [4, "nenhuma das outras alternativas estão corretas"]
+    ],
+    "correta": 2,
+    "explicacao": "A espondilose cervical, termo que se refere às alterações degenerativas da coluna cervical, é uma condição degenerativa, idade relacionada, comum em indivíduos de populações industriais, em virtude do estilo de vida e a exposição a fatores ambientais e a trabalhos repetitivos onde se estima que entre 50% e até 80% dos indivíduos apresentam no mínimo um episódio de dor cervical ao longo da vida, com ou sem componente radicular associado. A doença degenerativa cervical é uma conseqüência natural do processo de envelhecimento, e em alguns indivíduos resulta em estenose do canal cervical, na maioria é assintomático, e em alguns tem expressão com consequência clínicas. \n \n   A mielopatia espondilótica cervical, que é a condição mais grave da expressão clínica da espondilose, é a causa mais comum de disfunção medular adquirida em indivíduos com mais de 55 anos e também a causa mais comum de tetraparesia e paraparesia espástica não traumática. Aos 30 anos virtualmente todos os indivíduos podem apresentar alterações degenerativas em nível microscópico em sua coluna cervical, aos 40 muitos terão evidências de alterações degenerativas em radiografias, condição que evolui progressivamente ao longo do tempo.",
+
+    "assets": [],
+    "fontes" : [
+      "3. Meluzzi A, Taricco M, Brock R, Dias M, Nakaguawa G, Guirado V et al. Fatores prognósticos associados ao tratamento cirúrgico da mielorradiculopatia espondilótica cervical. Coluna/Columna. 2012;11(1):52-62. Disponível em http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1808-18512012000100010"
+    ]
+  }
+]

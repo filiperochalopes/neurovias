@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>NeuroVias - Modo I</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+<link rel="stylesheet" href="neurovias2.css" type="text/css">
+
+<script type="text/javascript" src="b4w.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<script type="text/javascript" src="neurovias2.js"></script>
+
+</head>
+<body>
+    <div class="none" id="backdrop"></div>
+    <div class="none" id="BoxDefinicao">
+        <div class="resposta"></div>
+        <table>
+            <tr>
+                <td data-info="nome"></td>
+            </tr>
+            <tr>
+                <td data-info="origem"></td>
+            </tr>
+            <tr>
+                <td data-info="funcao"></td>
+            </tr>
+            <tr>
+                <td data-info="terminacao"></td>
+            </tr>
+            <tr>
+                <td data-info="clinica"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="none" id="quizBox">
+        <div data-alternativa="a"></div>
+        <div data-alternativa="b"></div>
+        <div data-alternativa="c"></div>
+        <div data-alternativa="d"></div>
+        <div data-alternativa="e"></div>
+        <div class="none" data-alternativa="resposta"></div>
+    </div>
+    
+    <!-- HEADER -->
+    <div id="menu-bt"><i class="fas fa-bars"></i></div>
+    <div id="logo_back"></div>
+    <div id="score"><span class="certo">0</span>|<span class="errado">0</span></div>
+  
+    <div class='flutuante botaobalao bottomcenter'>
+        <div id="quiz" class='bt claro'><i class="fas fa-question"></i>&nbsp;&nbsp;QUIZ</div>
+    </div>
+  
+    <div class='flutuante botaobalao bottomleft'>
+        <div class='balaomensagem'>
+            <div>
+                <h3>Informações:</h3>
+                <h4>Como estudar</h4>
+                <p>Clique nas áreas colordas para conhecer o trato, suas funções e caminho.</p>
+                <h4>Como praticar</h4>
+                <p>Clique em <i class="fas fa-question"></i> QUIZ e preste atenção! Uma das vias neurais será destacada aleatoriamente e depois aparecerá 5 alternativas na tela, marque a correspondente à via selecionada.</p>
+                <p>A qualquer momento você pode clicar na logo para voltar.</p>
+            </div>
+        </div>
+        <div class='bt roxo'><i class="fas fa-info"></i></div>
+    </div>
+    
+    <aside id="painel_left">
+        <div class='botaobalao bt leftmenu_sub twoclicks' data-clicks='0' data-submenu='99'>
+            <div class='bt roxo'><i class="fas fa-arrow-circle-up"></i><span class="secondclick">Vias ascendentes</span></div>
+        </div>
+        <div class='botaobalao bt leftmenu_sub twoclicks' data-clicks='0' data-submenu='0'>
+            <div class='bt roxo'><i class="fas fa-arrow-circle-down"></i><span class="secondclick">Vias descendentes</span>
+            </div>
+            <ul class="submenu">
+                <li>Sistema lateral<span>Por que esse nome?</span></li>
+                <li>Sistema medial</li>
+            </ul>
+        </div>
+    </aside>
+    
+    <div id="main_canvas_container"></div>
+    
+</body>
+
+</html>

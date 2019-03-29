@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>NeuroVias - Modo I</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+<link rel="stylesheet" href="neurovias1.css" type="text/css">
+
+<script type="text/javascript" src="b4w.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<script type="text/javascript" src="neurovias1.js"></script>
+
+</head>
+<body>
+    <div class="none" id="backdrop"></div>
+    
+    <!-- HEADER -->
+    <div id="menu-bt"><i class="fas fa-bars"></i></div>
+    <div id="logo_back"></div>
+    
+    <div class='flutuante botaobalao bottomleft'>
+        <div class='balaomensagem'>
+            <div>
+                <h3>Informações:</h3>
+                <h4>Como estudar</h4>
+                <p>Clique nas áreas vermelhas ou abra o menu no botão <i class="fas fa-bars"></i> à esquerda da logo e clique em um dos conceitos para estudar.</p>
+                <p>A qualquer momento você pode clicar na logo para voltar.</p>
+            </div>
+        </div>
+        <div class='bt roxo'><i class="fas fa-info"></i></div>
+    </div>
+    
+    <nav>
+        <ul>
+            <li class="showbox" data-showbox="nucleo">Núcleo</li>
+            <li class="showbox" data-showbox="formacaoreticular">Formaçao reticular</li>
+            <li class="showbox" data-showbox="cortex">Cortex</li>
+            <li class="showbox" data-showbox="lemnisco">Lemnisco</li>
+            <li class="showbox" data-showbox="funiculo">Funículo</li>
+            <li class="showbox" data-showbox="decussacao">Decussação</li>
+            <li class="showbox" data-showbox="fibrasprojecao">Fibras de projeçao</li>
+            <li class="showbox" data-showbox="fibrasassociacao">Fibras de associação</li>
+            <li class="showbox" data-showbox="modulacao">Modulação</li>
+            <li class="showbox" data-showbox="neuroimagem">Neuroimagem funcional</li>
+        </ul>
+    </nav>
+    
+    <div id="main_canvas_container"></div>
+    
+    <div class="info none" id="substanciacinzenta">
+        <h2>Substância Cinzenta</h2>
+        <p>Tecido nervoso constituído de neuróglia, corpos de neurônios e <span class="mark">fibras predominantemente amielínicas.</span></p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="substanciabranca">
+        <h2>Substância Branca</h2>
+        <p>Tecido nervoso formado de neuróglia e <span class="mark">fibras predominantemente mielínicas</span>;</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="fasciculo">
+        <h2>Fascículo</h2>
+        <p>Usualmente o termo se refere a um <span class="mark">trato mais compacto.</span> Entretanto, o emprego do termo fascículo, em vez de trato, para algumas estruturas deve-se mais à <span class="mark">tradição</span> do que a uma diferença fundamental existente entre eles</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="trato">
+        <h2>Trato</h2>
+        <p><span class="mark">Feixe de fibras nervosas com aproximadamente a mesma origem, mesma função e mesmo destino.</span> As fibras podem ser mielínicas ou amielínicas. Na denominação de um trato, usam-se dois nomes; o primeiro indicando a origem e o segundo a terminação das fibras. Pode, ainda, haver um terceiro nome indicando a posição do trato. Assim, trato corticoespinhal lateral indica uma trato cujas fibras se originam no córtex cerebral, terminam na medula espinhal e se localiza no funículo lateral da medula.</p>
+        <p>Machado, 2014</p>
+        <p><em>O trato clicado por exemplo é o <span class="markred">espino</span><span class="markblue">talâmico</span> lateral.</em></p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="nucleo">
+        <h2>Núcleo</h2>
+        <p><span class="mark">Massa de substância cinzenta dentro de substância branca</span>, ou <span class="mark">grupo delimitado de neurônios com aproximadamente a mesma estrutura e mesma função</span></p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="formacaoreticular">
+        <h2>Formação Reticular</h2>
+        <p>Agregado de neurônios separados por fibras nervosas que não correspondem exatamente às substâncias branca ou cinzenta e ocupa a parte central do tronco encefálico</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="cortex">
+        <h2>Córtex</h2>
+        <p>Substância cinzenta que se dispõe em uma camada fina na superfície do cérebro e do cerebelo</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="lemnisco">
+        <h2>Lemnisco</h2>
+        <p>O termo significa fita. É empregado para alguns feixes de fibras sensitivas que levam impulsos nervosos ao tálamo</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="funiculo">
+        <h2>Funículo</h2>
+        <p>O termo significa cordão e é usado para a substância branca medula. Um funículo contém vários tratos ou fascículos</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="decussacao">
+        <h2>Decussação</h2>
+        <p>Formação anatômica constituída por <span class="mark">fibras nervosas que cruzam obliquamente o plano mediano</span> e que têm aproximadamente a mesma direção (Figura 14.1). O exemplo mais conhecido é a decussação das pirâmides</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="comissura">
+        <h2>Comissura</h2>
+        <p>Formação anatômica constituída por <span class="mark">fibras nervosas que cruzam perpendicularmente o plano mediano</span> e que têm, por conseguinte, direções diametralmente opostas (Figura 14.1). O exemplo mais conhecido é o corpo caloso</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="fibrasprojecao">
+        <h2>Fibras de Projeção</h2>
+        <p>Fibras de projeção de uma determinada área ou órgão do sistema nervoso central são fibras que saem fora dos limites desta área ou deste órgão</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="fibrasassociacao">
+        <h2>Fibras de Associação</h2>
+        <p>Fibras de associação de uma determinada área ou órgão do sistema nervoso central são fibras que associam pontos mais ou menos distantes desta área ou deste órgão sem, entretanto, abandoná-lo.</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="modulacao">
+        <h2>Modulação</h2>
+        <p>Mudança de excitabilidade de um neurônio causada por axônios de outros neurônios não relacionados com a função do primeiro. Por exemplo, um axônio pode mudar a excitabilidade de um neurônio motor sem se relacionar diretamente com a motricidade.</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+    <div class="info none" id="neuroimagem">
+        <h2>Neuroimagem Funcional</h2>
+        <p>Técnica que permite estudar o estado funcional de áreas do SNC em indivíduos sem anestesia. Baseia-se no fato de que quando os neurônios são ativados há aumento do metabolismo e do fluxo sanguíneo. o que é detectado pelo equipamento. Para mais informações veja Capítulo 31.</p>
+        <p>Machado, 2014</p>
+        <div class="close"><i class="far fa-window-close"></i></div>
+    </div>
+    
+</body>
+
+</html>
